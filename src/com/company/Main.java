@@ -1,19 +1,35 @@
 package com.company;
 
+import java.util.Scanner;
+
+import static com.company.DayOfTheWeek.*;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        DayOfTheWeek day = DayOfTheWeek.FRIDAY;
-
-        switch(day){
-            case MONDAY -> System.out.println("Дуйшомбу куну Java окуйм");
+        Scanner scanner = new Scanner(System.in);
+        DayOfTheWeek DayOfTheWeek = com.company.DayOfTheWeek.valueOf(scanner.nextLine());
+        switch ((DayOfTheWeek)){
+            case MONDAY -> System.out.println("Шейшенби куну англис тил сабагын окуйм");
             case TUESDAY -> System.out.println("Шейшенби куну англис тил сабагын окуйм");
-            case WEDNESDAY -> System.out.println("Шаршенби куну кыргыз тил сабагын окуйм");
-            case THURSDAY -> System.out.println("Бейшемби куну СофтСкилс сабагын окуйм ");
-            case FRIDAY -> System.out.println("Жума куну илим сабагын окуйм");
-            case SATURDAY -> System.out.println("Ишемби куну адабий китеп окуу");
-            case SUNDAY -> System.out.println("Жекшемби куну сейилдоо куну");
+            case WEDNESDAY -> System.out.println("Шейшенби куну англис тил сабагын окуйм");
+            case THURSDAY -> System.out.println("Шейшенби куну англис тил сабагын окуйм");
+            case FRIDAY -> System.out.println("Шейшенби куну англис тил сабагын окуйм");
+            case SATURDAY -> System.out.println("Шейшенби куну англис тил сабагын окуйм");
+            case SUNDAY -> System.out.println("Шейшенби куну англис тил сабагын окуйм");
         }
+
+
+
+
+
     }
-}
+    }
+
+
+
+
+
+
+
